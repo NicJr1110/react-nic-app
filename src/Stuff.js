@@ -7,9 +7,8 @@ import Figure from "./Figure";
 
 let Stuff = ({ square }) => (         
   <React.Fragment>        
-    <Header
-      text = "Nic's React App"
-    />    
+    <Header>Nic's React Project</Header>
+    
     <Paragraph 
       message = "Lorem ipsum, smelly smelly bum bum "  
     /> 

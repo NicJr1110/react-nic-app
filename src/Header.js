@@ -2,9 +2,9 @@ import React from 'react';
 
 
 
-let Header = ({ text }) => (
+let Header = ({children}) => (
     
-    <h1>{ text }</h1>
+    <h1>{ children }</h1>
         
 );
 
