@@ -2,9 +2,9 @@ import React from 'react';
 
 
 
-let Header = () => (
+let Header = ({ text }) => (
     
-    <h1>Hello!</h1>
+    <h1>{ text }</h1>
         
 );
 
