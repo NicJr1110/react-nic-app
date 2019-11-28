@@ -2,14 +2,14 @@ import React from 'react';
 
 
 
-let Paragraph = ({ message }) => (
-    <p>{ message }</p>
+let Paragraph = ({ children }) => (
+    <p>{ children }</p>
 
 );
 
 //Defualting props
 Paragraph.defaultProps = {
-    message : "Hello World"
+    children : "Hello World"
 };
 
 export default Paragraph;

@@ -9,11 +9,9 @@ let Stuff = ({ square }) => (
   <React.Fragment>        
     <Header>Nic's React Project</Header>
     
-    <Paragraph 
-      message = "Lorem ipsum, smelly smelly bum bum "  
-    /> 
-    {square ?
-    <Square 
+    <Paragraph>Lorem ipsum, smelly smelly bum</Paragraph>
+    
+    {square ? <Square 
       colour = 'green'  
     /> : null }
     <People 
