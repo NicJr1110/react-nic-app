@@ -3,6 +3,7 @@ import React from 'react';
 let pages = [1,2,3,4];
 
 let Pagination = () => (
+    
     <ul className="pagination">
     {pages.map((value, index) => (
         <li key= {index}>
