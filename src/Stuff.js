@@ -4,6 +4,7 @@ import Paragraph from "./Paragraph"; //This allows us access to header. bit like
 import Square from "./Square";
 import People from "./People";
 import Figure from "./Figure";
+import Basket from "./Basket";
 
 let Stuff = ({ square }) => (         
   <React.Fragment>        
@@ -23,6 +24,12 @@ let Stuff = ({ square }) => (
     />
     <Figure
       caption = "Wiggle Wiggle Bitch"
+    />
+    <Basket
+      items = { [{ name: "Coffee", price: 2.10 },
+      { name: "Bananas", price: 3.50 },
+      { name: "Milk", price: 250.65 },
+      { name: "The Great Milk Shortage by Simon Schama", price: 12.99 }] }
     />
   </React.Fragment>
 );
