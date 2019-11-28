@@ -5,17 +5,18 @@ import Square from "./Square";
 import People from "./People";
 import Figure from "./Figure";
 
-let Stuff = () => (         
+let Stuff = ({ square }) => (         
   <React.Fragment>        
     <Header
       text = "Nic's React App"
     />    
     <Paragraph 
       message = "Lorem ipsum, smelly smelly bum bum "  
-    />  
+    /> 
+    {square ?
     <Square 
       colour = 'green'  
-    />
+    /> : null }
     <People 
       names = { ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"] }
     />

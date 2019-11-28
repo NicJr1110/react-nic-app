@@ -4,7 +4,9 @@ import Stuff from "./Stuff";
 
 
 let App = () => (         //  the function has a capital as Babbel turns this into a Class later when turning the beneath into JS
-  <Stuff />
+  <Stuff 
+    square = { true }  
+  />
 );
 
 export default App;
