@@ -16,7 +16,9 @@ let Stuff = () => (
     <Square 
       colour = 'green'  
     />
-    <People />
+    <People 
+      names = { ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"] }
+    />
     <Figure 
       src = "http://78.media.tumblr.com/ea3884f17979500c2406fd4d21891195/tumblr_mr4humiiCH1r4xjo2o1_500.gif"
       caption = "Gigantamax Meowth"
