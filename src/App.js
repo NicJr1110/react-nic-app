@@ -1,26 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'; // This is what makes the file aware it is a react file. So always needed
+import Header from "./Header";  //This allows us access to header. bit like  namespace
+import Content from "./Content";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+let App = () => (         //  the function has a capital as Babbel turns this into a Class later when turning the beneath into JS
+  <React.Fragment>        
+    <Header />      
+    <Content />
+  </React.Fragment>
+);
 
 export default App;
