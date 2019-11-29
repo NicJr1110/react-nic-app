@@ -6,6 +6,7 @@ import People from "./People";
 import Figure from "./Figure";
 import Basket from "./Basket";
 // import FadeIn from "./FadeIn";
+import Clicked from "./Clicked";
 
 const Stuff = ({ square }) => (         
   <React.Fragment>        
@@ -33,7 +34,9 @@ const Stuff = ({ square }) => (
       { name: "The Great Milk Shortage by Simon Schama", price: 12.99 }] }
     />
     {/* <FadeIn time="500ms">Hello</FadeIn> */}
+    <Clicked />
   </React.Fragment>
+  
 );
 
 Stuff.defaultProps = {
