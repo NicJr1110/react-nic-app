@@ -10,7 +10,7 @@ const Basket = ({ items }) => (
         </thead>
         <tbody>
         {items.map((item, i) => (
-            <BasketItem key = { i} name = { item.name } price = { item.price } />
+            <BasketItem key = { i } name = { item.name } price = { item.price } />
         ))}
        </tbody>
    </table>

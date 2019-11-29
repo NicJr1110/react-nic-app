@@ -1,23 +1,18 @@
 import React from 'react';
 
-// const boxSize = {
-//     background: 'red',
-//     height: 200,
-//     width: 200
-// }
-
-const Square = ( {colour} ) => (
-    <div style={ { 
+const Square = ({ colour }) => (
+    <div 
+        style={ { 
         background: colour,
         height: 200,
         width: 200
-        
-    } } >
-    </div> 
+        } }
+        className='m-auto'
+    />
 );
 
 
-//Defualting props
+//Defaulting props
 Square.defaultProps = {
     colour : "blue"
 };

@@ -11,20 +11,20 @@ const Stuff = ({ square }) => (
   <React.Fragment>        
     <Header>Nic's React Project</Header>
     
-    <Paragraph>Lorem ipsum, smelly smelly bum</Paragraph>
+    <Paragraph>Lorem ipsBum , Hehehehe!</Paragraph>
     
-    {square ? <Square 
-      colour = 'green'  
-    /> : null }
+    {square ? <Square colour = 'papayawhip'/> : null }
+
     <People 
       names = { ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"] }
     />
     <Figure 
-      src = "http://78.media.tumblr.com/ea3884f17979500c2406fd4d21891195/tumblr_mr4humiiCH1r4xjo2o1_500.gif"
-      caption = "Gigantamax Meowth"
+      src = "https://66.media.tumblr.com/bf7d3ef19576e853a8e980fdb758d14d/tumblr_moc5ybStEV1r4xjo2o1_250.gifv"
+      caption = "Dude! Where's my CatNip"
     />
     <Figure
-      caption = "Wiggle Wiggle B***h"
+      src = "https://66.media.tumblr.com/d567f1e7cfc797cc3b233935be37d6b0/tumblr_mh1kjs2aQH1r4xjo2o1_250.gifv"
+      caption = "F**k"
     />
     <Basket
       items = { [{ name: "Coffee", price: 2.10 },
@@ -35,5 +35,9 @@ const Stuff = ({ square }) => (
     {/* <FadeIn time="500ms">Hello</FadeIn> */}
   </React.Fragment>
 );
+
+Stuff.defaultProps = {
+  square : true
+};
 
 export default Stuff;

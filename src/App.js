@@ -5,7 +5,7 @@ import Stuff from "./Stuff";
 
 const App = () => (         //  the function has a capital as Babbel turns this into a Class later when turning the beneath into JS
   <Stuff 
-    square = { true }  
+    
   />
 );
 
