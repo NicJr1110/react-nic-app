@@ -7,7 +7,7 @@ class Square extends Component {
         super(props);
 
         this.state = {
-            colour: 'papayawhip'
+            defaulted: false
         };
 
         this.handleClick = this.handleClick.bind(this);
@@ -16,23 +16,19 @@ class Square extends Component {
     }
 
     handleClick() {
-        if(this.state.colour === 'papayawhip'){
-            this.setState({
-                colour : 'peru'
-            });
-        } else {
-            this.setState({
-                colour : 'papayawhip'
-            });
-        };
+        this.setState({
+           defaulted: !this.state.defaulted
+        })
     }
  
     render(){
-        let { colour } = this.state;
+        let { defaulted } = this.state;
+        let { colour }  = this.props;
+        let defaultColour = "peru";
         return (
             <div 
                 style={ { 
-                background: colour,
+                background: defaulted ? colour : defaultColour,
                 height: 200,
                 width: 200
                 } }
@@ -47,7 +43,7 @@ class Square extends Component {
 
 //Defaulting props
 Square.defaultProps = {
-    colour : "blue"
+    colour : "pink"
 };
 
 export default Square;

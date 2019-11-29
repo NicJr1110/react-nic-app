@@ -7,6 +7,7 @@ import Figure from "./Figure";
 import Basket from "./Basket";
 // import FadeIn from "./FadeIn";
 import Clicked from "./Clicked";
+import ToggleText from "./ToggleText";
 
 const Stuff = ({ square }) => (         
   <React.Fragment>        
@@ -14,7 +15,7 @@ const Stuff = ({ square }) => (
     
     <Paragraph>Lorem ipsBum , Hehehehe!</Paragraph>
     
-    {square ? <Square colour = 'papayawhip'/> : null }
+    {square ? <Square colour = 'papayawhip' /> : null }
 
     <People 
       names = { ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"] }
@@ -35,6 +36,10 @@ const Stuff = ({ square }) => (
     />
     {/* <FadeIn time="500ms">Hello</FadeIn> */}
     <Clicked />
+    <ToggleText 
+      initial="Hello World!"
+      alt = "GoodBye Aliens!"
+    />
   </React.Fragment>
   
 );
