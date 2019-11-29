@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-let Paragraph = ({ children }) => (
+const Paragraph = ({ children }) => (
     <p>{ children }</p>
 
 );

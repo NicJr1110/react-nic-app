@@ -2,7 +2,7 @@ import React from 'react';
 import BasketItem from './BasketItem';
 
 
-let Basket = ({ items }) => (
+const Basket = ({ items }) => (
    <table>
         <thead>
            <th>Name</th>

@@ -2,7 +2,7 @@ import React from 'react';
 
 //let names = ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"];
 
-let People = ({ names }) => (
+const People = ({ names }) => (
     <ul>
     {names ?
       names.map((value, index) => (

@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-let Header = ({children}) => (
+const Header = ({ children }) => (
     
     <h1>{ children }</h1>
         

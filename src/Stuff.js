@@ -5,8 +5,9 @@ import Square from "./Square";
 import People from "./People";
 import Figure from "./Figure";
 import Basket from "./Basket";
+// import FadeIn from "./FadeIn";
 
-let Stuff = ({ square }) => (         
+const Stuff = ({ square }) => (         
   <React.Fragment>        
     <Header>Nic's React Project</Header>
     
@@ -23,7 +24,7 @@ let Stuff = ({ square }) => (
       caption = "Gigantamax Meowth"
     />
     <Figure
-      caption = "Wiggle Wiggle Bitch"
+      caption = "Wiggle Wiggle B***h"
     />
     <Basket
       items = { [{ name: "Coffee", price: 2.10 },
@@ -31,6 +32,7 @@ let Stuff = ({ square }) => (
       { name: "Milk", price: 250.65 },
       { name: "The Great Milk Shortage by Simon Schama", price: 12.99 }] }
     />
+    {/* <FadeIn time="500ms">Hello</FadeIn> */}
   </React.Fragment>
 );
 

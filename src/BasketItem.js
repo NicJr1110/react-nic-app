@@ -1,6 +1,6 @@
 import React from 'react';
 
-let BasketItem = ({ name, price}) => (
+const BasketItem = ({ name, price}) => (
    
     <tr>
         <td>{ name }</td>

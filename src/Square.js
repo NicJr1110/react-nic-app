@@ -6,8 +6,14 @@ import React from 'react';
 //     width: 200
 // }
 
-let Square = ( {colour} ) => (
-    <div style={ { background: colour, height: 200, width: 200} } ></div> 
+const Square = ( {colour} ) => (
+    <div style={ { 
+        background: colour,
+        height: 200,
+        width: 200
+        
+    } } >
+    </div> 
 );
 
 
