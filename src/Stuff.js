@@ -1,13 +1,20 @@
 import React from 'react'; // This is what makes the file aware it is a react file. So always needed
 import Header from "./Header"; 
-import Paragraph from "./Paragraph"; //This allows us access to header. bit like  namespace
-import Square from "./Square";
-import People from "./People";
-import Figure from "./Figure";
-import Basket from "./Basket";
+import Paragraph from "./week9/Paragraph"; //This allows us access to header. bit like  namespace
+import Square from "./week9/Square";
+import People from "./week9/People";
+import Figure from "./week9/Figure";
+import Basket from "./week9/Basket";
 // import FadeIn from "./FadeIn";
-import Clicked from "./Clicked";
+import Clicked from "./week9/Clicked";
 import ToggleText from "./ToggleText";
+import Counter from "./week9/Counter";
+import StepCounter from "./week9/StepCounter";
+import CatchMeIfYouCan from"./week9/CatchMeIfYouCan";
+import RollCall from"./week9/RollCall";
+import Colours from"./week9/Colours";
+import Die from"./week9/Die";
+import Length from "./forms/Length";
 
 const Stuff = ({ square }) => (         
   <React.Fragment>        
@@ -39,6 +46,35 @@ const Stuff = ({ square }) => (
     <ToggleText 
       initial="Hello World!"
       alt = "GoodBye Aliens!"
+    />
+    <Counter
+      initial = { 50 }
+      max = { 100 }
+    />
+    <StepCounter
+      max = { 100 }
+      step = { 5 }
+    />
+    <CatchMeIfYouCan
+      jump = {100}
+    />
+    <RollCall
+      names={ ["Chris", "Betty", "Kit", "Charlotte", "Kristin", "Jae", "Ellie", "Gareth", "Nic", "Mark", "Tom", "Ruth"] }
+    />
+    <Colours 
+      colours = { [
+        "#C14412",
+        "#EBB31A",
+        "#8F5318",
+        "#009EAD",
+        "#395967",
+      ] }
+    />
+    <Die
+      sides ={ 6 }
+    />
+    <Length 
+      name = "Length Input Field"
     />
   </React.Fragment>
   
