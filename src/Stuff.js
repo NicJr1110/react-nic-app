@@ -15,8 +15,9 @@ import RollCall from"./week9/RollCall";
 import Colours from"./week9/Colours";
 import Die from"./week9/Die";
 import Length from "./forms/Length";
-import List from "./forms/List"
-import Adder from "./forms/Adder"
+import List from "./forms/List";
+import Adder from "./forms/Adder";
+import TempConverter from "./forms/TempConverter"
 
 const Stuff = ({ square }) => (         
   <div className = "col-md-auto container-md" style = { {
@@ -85,6 +86,9 @@ const Stuff = ({ square }) => (
     />
     <Adder 
       name = "Adder "
+    />
+    <br/>
+    <TempConverter
     />
   </div>
   

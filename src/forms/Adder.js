@@ -5,7 +5,8 @@ class Adder extends Component{
         super(props);
 
         this.state ={
-            input: 0,
+            input: '0',
+            numbers: [],
             total: 0
         }
 
@@ -20,14 +21,16 @@ class Adder extends Component{
     }
 
     handleClick() {
-        let { total,input} = this.state;
+        let { total,input,numbers } = this.state;
+        let arr1 = [...numbers, input]
         this.setState({
-            total: parseInt(total) + parseInt(input)
+            total: +total + +input,
+            numbers : arr1
         })
 
     }
     render() {
-        let { total } = this.state;
+        let { total,numbers } = this.state;
         let { name } = this.props;
         return(
             <div className = "form-group">
@@ -42,6 +45,11 @@ class Adder extends Component{
                 <button
                     onClick = { this.handleClick }
                 >Add</button>
+                <ul>
+                    { numbers.map((value, index) => (
+                        <li key={ index }> { value }</li>
+                    ))}
+                </ul>
                 <p>{ total } </p>
             </div>
         );
