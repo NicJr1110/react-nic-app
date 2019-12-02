@@ -15,9 +15,13 @@ import RollCall from"./week9/RollCall";
 import Colours from"./week9/Colours";
 import Die from"./week9/Die";
 import Length from "./forms/Length";
+import List from "./forms/List"
+import Adder from "./forms/Adder"
 
 const Stuff = ({ square }) => (         
-  <React.Fragment>        
+  <div className = "col-md-auto container-md" style = { {
+    width: 600 
+    } }>        
     <Header>Nic's React Project</Header>
     
     <Paragraph>Lorem ipsBum , Hehehehe!</Paragraph>
@@ -76,7 +80,13 @@ const Stuff = ({ square }) => (
     <Length 
       name = "Length Input Field"
     />
-  </React.Fragment>
+    <List 
+      name = "Nic's list"
+    />
+    <Adder 
+      name = "Adder "
+    />
+  </div>
   
 );
 
