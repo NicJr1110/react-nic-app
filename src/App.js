@@ -17,6 +17,10 @@ import Square from "./week9/Square";
 import StepCounter from "./week9/StepCounter";
 import Components from "./Components";
 
+import CatchMeIfYouCan from "./components/CatchMeIfYouCan";
+import Progress from "./components/Progress";
+
+
 
 
 
@@ -26,36 +30,73 @@ const App = () => (         //  the function has a capital as Babbel turns this 
     <>
       <Header>Nic's React Project</Header>
       <Switch>
-        <Route exact path = "/tempconverter" component = { TempConverter }/>
-        <Route exact path = "/buttons" component = { Clicked }/>
+        <Route exact path = "/" >
+          <Footer />
+        </Route>
+        <Route exact path = "/tempconverter">
+          <TempConverter />
+          <Footer />
+        </Route>
+        <Route exact path = "/buttons" >
+          <Clicked />
+          <Footer />
+        </Route>
         <Route exact path = "/squares" render={ () => (
-            <Colours 
-            colours = { [
-              "#C14412",
-              "#EBB31A",
-              "#8F5318",
-              "#009EAD",
-              "#395967",
-            ] }
-            />
+            <>
+              <Colours 
+              colours = { [
+                "#C14412",
+                "#EBB31A",
+                "#8F5318",
+                "#009EAD",
+                "#395967",
+              ] }
+              />
+              <Footer />
+            </>
+
           )} 
-        />
+        >
+        </Route>
         <Route exact path = "/rollcall" render={ () => (
-          <RollCall
-          names={ ["Chris", "Betty", "Kit", "Charlotte", "Kristin", "Jae", "Ellie", "Gareth", "Nic", "Mark", "Tom", "Ruth"] }
-          />
-        )}
-        />
+          <>
+            <RollCall
+            names={ ["Chris", "Betty", "Kit", "Charlotte", "Kristin", "Jae", "Ellie", "Gareth", "Nic", "Mark", "Tom", "Ruth"] }
+            />
+            <Footer />
+          </>
+        ) }
+        >
+          
+        </Route>
         <Route exact path = "/squares/:colour" render={ ( { match } ) => (
           <Square colour = { match.params.colour }  /> 
-        )} /> 
+        ) }>
+          <Footer />
+        </Route> 
         <Route exact path = "/steps/:max/:step" render={ ( { match } ) => (
           <StepCounter max={ +match.params.max } step={ +match.params.step } />
-        )} />
+        ) } >
+          <Footer />
+        </Route>
         <Route exact path = "/components"  component = { Components } />
-        <Route component = { FourOhFour }/>
+        
+        <Route exact path ="/components/progress">
+          <Progress />
+          <Components />
+        </Route>
+        <Route exact path ="/components/catchmeifyoucan">
+          <CatchMeIfYouCan jump = { 150 }/>
+          <Components />
+        </Route>
+    
+        <Route component = { FourOhFour }>
+          <Footer />
+          </Route>
+
+
       </Switch>
-      <Footer />
+      
     </>
   </Router>
 );

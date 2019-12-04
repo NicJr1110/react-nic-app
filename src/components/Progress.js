@@ -20,7 +20,6 @@ class Progress extends Component {
             value: +value === 100 ? 100 : +value + 10
         })
 
-
     }
 
 
