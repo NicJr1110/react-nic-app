@@ -15,6 +15,9 @@ const Footer = () => (
         <li className ="list-group-item" >
             <Link to="/rollcall">RollCall</Link>
         </li>
+        <li className ="list-group-item" >
+            <Link to="/components">Components</Link>
+        </li>
     </ul>
 );
 

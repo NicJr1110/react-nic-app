@@ -15,6 +15,7 @@ import RollCall from "./week9/RollCall";
 import FourOhFour from "./FourOhFour";
 import Square from "./week9/Square";
 import StepCounter from "./week9/StepCounter";
+import Components from "./Components";
 
 
 
@@ -51,6 +52,7 @@ const App = () => (         //  the function has a capital as Babbel turns this 
         <Route exact path = "/steps/:max/:step" render={ ( { match } ) => (
           <StepCounter max={ +match.params.max } step={ +match.params.step } />
         )} />
+        <Route exact path = "/components"  component = { Components } />
         <Route component = { FourOhFour }/>
       </Switch>
       <Footer />
