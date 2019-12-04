@@ -17,7 +17,11 @@ import Die from"./week9/Die";
 import Length from "./forms/Length";
 import List from "./forms/List";
 import Adder from "./forms/Adder";
-import TempConverter from "./forms/TempConverter"
+import TempConverter from "./forms/TempConverter";
+import Transform from "./forms/Transform";
+// import SquareColor from "./state/SquareColor";
+import Squares from "./state/Squares"
+
 
 const Stuff = ({ square }) => (         
   <div className = "col-md-auto container-md" style = { {
@@ -90,6 +94,14 @@ const Stuff = ({ square }) => (
     <br/>
     <TempConverter
     />
+    <Transform 
+      name = "square"
+      transform = { x => x * x }
+    />
+    <Squares 
+      colour = "lightseagreen"
+    />
+    
   </div>
   
 );
