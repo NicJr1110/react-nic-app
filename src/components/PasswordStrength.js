@@ -48,7 +48,7 @@ class PasswordStrength extends Component {
         let output = this.calcBackground();
         return(
         
-            <Form.Group controlId="formPassword">
+            <Form.Group controlId="formPassword" className = "container">
                 <Form.Label>Password</Form.Label>
                 <Form.Control 
                     style = { output }

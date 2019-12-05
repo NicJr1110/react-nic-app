@@ -28,19 +28,19 @@ import PasswordStrength from "./components/PasswordStrength";
 
 const App = () => (         //  the function has a capital as Babbel turns this into a Class later when turning the beneath into JS
   <Router>
-    <>
+    <div className = "container">
       <Header>Nic's React Project</Header>
       <Switch>
         <Route exact path = "/" >
-          <Footer />
+          
         </Route>
         <Route exact path = "/tempconverter">
           <TempConverter />
-          <Footer />
+          
         </Route>
         <Route exact path = "/buttons" >
           <Clicked />
-          <Footer />
+          
         </Route>
         <Route exact path = "/squares" render={ () => (
             <>
@@ -53,7 +53,7 @@ const App = () => (         //  the function has a capital as Babbel turns this 
                 "#395967",
               ] }
               />
-              <Footer />
+              
             </>
 
           )} 
@@ -64,7 +64,7 @@ const App = () => (         //  the function has a capital as Babbel turns this 
             <RollCall
             names={ ["Chris", "Betty", "Kit", "Charlotte", "Kristin", "Jae", "Ellie", "Gareth", "Nic", "Mark", "Tom", "Ruth"] }
             />
-            <Footer />
+            
           </>
         ) }
         >
@@ -73,12 +73,12 @@ const App = () => (         //  the function has a capital as Babbel turns this 
         <Route exact path = "/squares/:colour" render={ ( { match } ) => (
           <Square colour = { match.params.colour }  /> 
         ) }>
-          <Footer />
+          
         </Route> 
         <Route exact path = "/steps/:max/:step" render={ ( { match } ) => (
           <StepCounter max={ +match.params.max } step={ +match.params.step } />
         ) } >
-          <Footer />
+          
         </Route>
         <Route exact path = "/components"  component = { Components } />
         
@@ -96,13 +96,13 @@ const App = () => (         //  the function has a capital as Babbel turns this 
         </Route>
     
         <Route component = { FourOhFour }>
-          <Footer />
+          
           </Route>
 
 
       </Switch>
-      
-    </>
+      <Footer />
+    </div>
   </Router>
 );
 

@@ -3,9 +3,9 @@ import ComponentFooter from './ComponentFooter';
 
 
 const Components = () => (
-    <>
+    <div className = "container">
         <ComponentFooter />
-    </>
+    </div>
     
 
 );

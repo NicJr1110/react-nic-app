@@ -26,8 +26,8 @@ class Progress extends Component {
     render() {
         let { value } = this.state;
         return(
-            <>
-                <ProgressBar>
+            <div className = "container">
+                <ProgressBar >
                     <ProgressBar striped variant="success" now={ +value } label= { `${value}%` }  animated={true} />
                 </ProgressBar>
                 <br/>
@@ -35,7 +35,7 @@ class Progress extends Component {
                     onClick = { this.handleClick }
                 >Increase 10%</Button>
                 
-            </>
+            </div>
         )
     }s
 }

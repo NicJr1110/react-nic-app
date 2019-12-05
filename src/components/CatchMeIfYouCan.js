@@ -5,7 +5,7 @@ class CatchMeIfYouCan extends Component{
     constructor(props){
         super(props);
         this.state = {
-            value: 0
+            value: 200
         }
 
         this.handleClick = this.handleClick.bind(this)
@@ -23,13 +23,16 @@ class CatchMeIfYouCan extends Component{
 
         return (
     
-            <div style={ { position:"relative"} }>
+            <div 
+                className = "container"
+                style={ { position:"relative"} }
+            >
                 <h4>Jumping Button</h4>
                 <Button 
                     style= { {
                         position: "absolute",
-                        top: value,
-                        left:  200
+                        top: 0,
+                        left:  value
                     } }
 
                     onClick={ this.handleClick }
