@@ -9,6 +9,9 @@ const ComponentFooter = () => (
         <li className ="list-group-item" >
             <Link to="/components/catchmeifyoucan">CatchMeIfYouCan</Link>
         </li>
+        <li className ="list-group-item" >
+            <Link to="/components/password">PasswordStrength</Link>
+        </li>
     </ul>
 );
 

@@ -19,6 +19,7 @@ import Components from "./Components";
 
 import CatchMeIfYouCan from "./components/CatchMeIfYouCan";
 import Progress from "./components/Progress";
+import PasswordStrength from "./components/PasswordStrength";
 
 
 
@@ -87,6 +88,10 @@ const App = () => (         //  the function has a capital as Babbel turns this 
         </Route>
         <Route exact path ="/components/catchmeifyoucan">
           <CatchMeIfYouCan jump = { 150 }/>
+          <Components />
+        </Route>
+        <Route exact path ="/components/password">
+          <PasswordStrength />
           <Components />
         </Route>
     
